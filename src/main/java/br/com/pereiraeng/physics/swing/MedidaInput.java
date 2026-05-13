@@ -7,6 +7,7 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.JLabel;
 
+import br.com.pereiraeng.math.expression.continuous.Constante.Const;
 import br.com.pereiraeng.physics.Grandeza;
 import br.com.pereiraeng.physics.Medida;
 import br.com.pereiraeng.physics.Unidade;
@@ -136,7 +137,8 @@ public class MedidaInput extends DoubleInput {
 	protected void setValue(Number number) {
 		// para se guardar o valor tratado (aquele pego do campo de texto),
 		// antes deve-se considerar a unidade digitada
-		super.setValue(number != null ? number.doubleValue() * this.units.get().getValue() : Double.NaN);
+		Number medida = number != null ? number.doubleValue() * this.units.get().getValue() : Double.NaN;
+		super.setValue(medida);
 	}
 
 	@Override

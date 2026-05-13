@@ -12,11 +12,11 @@ import java.util.Map.Entry;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
+import br.com.pereiraeng.core.LocaleConfig;
 import br.com.pereiraeng.physics.Grandeza;
 import br.com.pereiraeng.physics.Unidade;
 import br.com.pereiraeng.swing.Grade;
 import br.com.pereiraeng.swing.input.Input;
-import br.com.pereiraeng.core.LocaleConfig;
 
 /**
  * Classe do objeto gráfico que permite a entrada e edição de dimensões planas
